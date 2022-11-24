@@ -121,10 +121,10 @@ body{
 	/*animation: flicker1 ease-out 15s infinite;*/
 }
 #flicker-2{
-	animation: flicker2 ease-in 15s infinite;
+	/*animation: flicker2 ease-in 15s infinite;*/
 }
 #flicker-3{
-	animation: flicker3 linear 15s infinite;
+	/*animation: flicker3 linear 15s infinite;*/
 }
 /*
 @keyframes flicker{
@@ -310,7 +310,7 @@ body{
 #typed-out{
 	color: var(--yellow);
 	text-decoration: underline;
-
+	--anime: none;
 
 }
 
@@ -321,8 +321,7 @@ body{
 	white-space: nowrap;
 	color: var(--yellow);
 	text-decoration: underline;
-	animation: typed-out 15s infinite,
-				blinky 0.3s infinite;
+	animation: var(--anime);
 	box-sizing: border-box;
 }
 @keyframes typed-out{
