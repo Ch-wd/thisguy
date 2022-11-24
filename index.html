@@ -7,6 +7,8 @@
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
+
+
 	<div class = "main-page-container">
 		<div class = "nav-bar">
 			<ul class = "nav-list">
@@ -24,7 +26,7 @@
 			</ul>
 		</div>
 		<div class = "central-gif">
-			<img src="img/guy-15sec.gif">
+			<img src="img/guy-15sec.gif" onload = "sync()">
 		</div>
 		<div class = "surround-services-container " id = "service-1">
 			<a href = "#"><div class = "flicker" id= "flicker-1">			
@@ -62,6 +64,15 @@
 		</div>
 	</div>
 </body>
+<script type="text/javascript">
+	// flick = document.querySelectorAll(".flicker");
+	function sync(){
+		console.log("loaded");
+		// console.log(flick[0].style.animation);
+		document.getElementById("flicker-1").style.animation = "flicker1 15s infinite";
+		document.getElementById("flicker-2").style.animation = "flicker2 15s infinite";
+		document.getElementById("flicker-3").style.animation = "flicker3 15s infinite";
+	}
+</script>
 <!-- <script type="text/javascript"></script> -->
-
 </html>

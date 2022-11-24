@@ -118,7 +118,7 @@ body{
 }
 
 #flicker-1{
-	animation: flicker1 ease-out 15s infinite;
+	/*animation: flicker1 ease-out 15s infinite;*/
 }
 #flicker-2{
 	animation: flicker2 ease-in 15s infinite;
