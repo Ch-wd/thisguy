@@ -2,9 +2,10 @@
 	margin: 0px;
 	padding: 0px;
 	box-sizing: content-box;
+	font-family: 'Share Tech', sans-serif;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Share+Tech&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech&family=Skranji&display=swap');
 
 :root {
 	--black: #000000;
@@ -25,7 +26,7 @@ html{
 body{
 	width: 100%;
 	height: 100%;
-	min-height: 630px;
+	min-height: 600px;
 }
 
 .main-page-container{
@@ -300,7 +301,7 @@ body{
 
 .drop-down a{
 	padding-left: 10px;
-	font-size: 2vw;
+	font-size: 1.5vw;
 }
 
 @media (max-width: 640px) {
@@ -500,19 +501,22 @@ body{
 .left{
 	/*left: 0%;*/
 	flex-direction: row;
-    filter: drop-shadow(3px 13px 5px #3c3838);
-
 	/*background-image: url("../img/blue-design.png");*/
 
+}
+
+.left .design{
+    filter: drop-shadow(3px 13px 5px var(--black));	
 }
 
 .right{
 	/*left: 100%;*/
 	flex-direction: row-reverse;
-    filter: drop-shadow(-3px 13px 5px #3c3838);
-
 	/*background-image: url("../img/yellow-design.png");*/
+}
 
+.right .design{
+   filter: drop-shadow(-3px 13px 5px var(--black));
 }
 .content-image{
 	width: 40%;
@@ -581,14 +585,17 @@ body{
 }
 
 h1{
-	padding-top: 10%;
+	font-family: 'Skranji', cursive;
+	padding-top: 5%;
 	font-size: 5vw;
 }
 
 p{
 	padding: 20px;
-	font-size: 2vw;
+	padding-top: 10px;
+	font-size: 1.7vw;
 	text-align: center;
+	line-height: 2vw;
 }
 .left h1{
 	color: var(--blue);
@@ -641,7 +648,8 @@ p{
 
 	p{
 		/*padding: 20px;*/
-		font-size: 5vw;
+		line-height: 5vw;
+		font-size: 3.5vw;
 		text-align: center;
 	}
 
@@ -652,11 +660,12 @@ p{
 /*Services page*/
 
 .services-holder{
-	padding-top: 5%;
+	padding-top: 1%;
 	display: flex;
 	width: 80%;
 	justify-content: center;
 	padding-right: 25%;
+	padding-left: 5%;
 }
 
 .service-content-holder{
