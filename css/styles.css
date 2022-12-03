@@ -695,6 +695,18 @@ p{
 	color:var(--blue);
 }
 
+.contacts{
+	font-size: 1.5vw;
+	color: var(--yellow);
+}
+
+.contacts span{
+	color: var(--blue);
+}
+.contacts h2{
+	padding-top: 3%;
+}
+
 @media (max-width: 640px){
 	.services-holder{
 		width: 100%;
@@ -710,5 +722,10 @@ p{
 		width: 100%;
 
 	}
+	.contacts{
+		font-size: 4vw;
+		color: var(--yellow);
+	}
 
 }
+
