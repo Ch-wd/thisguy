@@ -46,7 +46,7 @@
 		</div>		
 		<div class = "surround-services-container " id = "service-3">
 			<a href="#page-6"><div class = "flicker" id = "flicker-3">
-			<img class = "surround-services" src = "img/service-2.png" >
+			<img class = "surround-services" src = "img/service-3.png" >
 			Illustrations
 			</div>
 			</a>
@@ -116,30 +116,30 @@
 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 			consequat.</p>
 			<div class = "services-holder" >
-				<a href="page-6">
+				<a href="#page-4">
 					<div class = "service-content-holder">
 						<div class = "service-image-holder">
-							<img src="img/service-1.png">
+							<img src="img/service-3.png">
 						</div>
 						<div class = "service-name-holder">
 							Website development
 						</div>
 					</div>
 				</a>
-				<a href="page-5">
+				<a href="#page-5">
 					<div class = "service-content-holder">
 						<div class = "service-image-holder">
-							<img src="img/service-1.png">
+							<img src="img/service-2.png">
 						</div>
 						<div class = "service-name-holder">
 							UI/UX Design
 						</div>
 					</div>
 				</a>
-				<a href="page-6">
+				<a href="#page-6">
 					<div class = "service-content-holder">
 						<div class = "service-image-holder">
-							<img src="img/service-1.png">
+							<img src="img/service-3.png">
 						</div>
 						<div class = "service-name-holder">
 							Illustrations
@@ -184,50 +184,21 @@
 		</div>
 		</a>
 	</div>
-	<div class = "other-page-container right" id = "page-5">
+	<div class = "other-page-container right" id = "page-6">
 		<div class = "design">
 			<img src="img/yellow-design.png">
 		</div>
 		<div class = "content-image">
-			<img src="img/dummy-image.png">
-		</div>
-		<div class = "content">
-			<h1 class = "blue">UI/UX DESIGN</h1>
-			<div class = "mobile-image-holder">
-				<div class = "mobile-design">
-					<img src="img/mobile-yellow-design.png">
-				</div>	
-				<div class = "mobile-content-image">
-					<img src="img/dummy-image.png">
-				</div>		
-			</div>
-
-			<p class = "yellow">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat.</p>
-		</div>
-		<a href="#page-6">
-		<div class ="scroll-gif">
-			<img src="img/hand-gif.gif">
-		</div>
-		</a>
-	</div>
-	<div class = "other-page-container left" id = "page-6">
-		<div class = "design">
-			<img src="img/blue-design.png">
-		</div>
-		<div class = "content-image">
-			<img src="img/dummy-image.png">
+			<img src="img/service-3.png">
 		</div>
 		<div class = "content">
 			<h1 class = "blue">ILLUSTRATIONS</h1>
 			<div class = "mobile-image-holder">
 				<div class = "mobile-design">
-					<img src="img/mobile-blue-design.png">
+					<img src="img/mobile-yellow-design.png">
 				</div>	
 				<div class = "mobile-content-image">
-					<img src="img/dummy-image.png">
+					<img src="img/service-3.png">
 				</div>		
 			</div>
 
@@ -237,6 +208,35 @@
 			consequat.</p>
 		</div>
 		<a href="#page-7">
+		<div class ="scroll-gif">
+			<img src="img/hand-gif.gif">
+		</div>
+		</a>
+	</div>
+	<div class = "other-page-container left" id = "page-5">
+		<div class = "design">
+			<img src="img/blue-design.png">
+		</div>
+		<div class = "content-image">
+			<img src="img/service-2.png">
+		</div>
+		<div class = "content">
+			<h1 class = "blue">UI/UX DESIGN</h1>
+			<div class = "mobile-image-holder">
+				<div class = "mobile-design">
+					<img src="img/mobile-blue-design.png">
+				</div>	
+				<div class = "mobile-content-image">
+					<img src="img/service-2.png">
+				</div>		
+			</div>
+
+			<p class = "yellow">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat.</p>
+		</div>
+		<a href="#page-6">
 		<div class ="scroll-gif">
 			<img src="img/hand-gif.gif">
 		</div>
@@ -288,7 +288,7 @@
 	menu_list = document.querySelector(".nav-list");
 	menu_button = document.querySelector(".menu-button-img");
 	var isMenuDisplayed = 0;
-	var x = window.matchMedia("(max-width: 767px)");
+	var x = window.matchMedia("(max-width: 640px)");
 	window.onscroll = function scroll_animations(){
 		// scrollTop = window.scrollTop();
 		if(x.matches){

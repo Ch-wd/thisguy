@@ -315,6 +315,7 @@ body{
 		background-repeat: no-repeat;
 		background-position: bottom;
 		z-index: 3;
+	    filter: drop-shadow(black 2px 4px 6px);
 	}
 	.menu-button{
 		width: 48px;
@@ -512,17 +513,24 @@ body{
 	/*background-image: url("../img/yellow-design.png");*/
 
 }
+.content-image{
+	width: 40%;
+	height:50%;
+}
 
+.content-image img{
+	width: 100%;
+}
 .left .content-image{
 	position: absolute;
 	top: 10%;
-	left: 10%;
+	left: 8%;
 }
 
 .right .content-image{
 	position: absolute;
 	top: 10%;
-	right: 10%;
+	right: 8%;
 }
 .mobile-image-holder{
 	display: none;
@@ -533,8 +541,8 @@ body{
 		display: none;
 	}
 	.mobile-image-holder{
-		width: 100%;
-		height: 40%;
+		width: 80%;
+		height: 30%;
 		display: flex;
 		position: relative;
 		/*justify-content: center;*/
@@ -542,7 +550,7 @@ body{
 	.mobile-design{
 		position: absolute;
 		padding-top: 10%;
-		width: 70%;
+		width: 80%;
 		/*position: absolute;*/
 		display: inline-block;
 	}
@@ -550,13 +558,15 @@ body{
 		position: absolute;
 	}
 	.mobile-design img{
-		width: 90%;
+		width: 70%;
 	}
 	.content-image{
 		display: none;
 	}
 	.mobile-content-image img{
-		width: 100%;
+		width: 70%;
+		margin-left: 15%;
+		margin-top: 10%;
 	}
 }
 /* Text content for other pages */
@@ -630,7 +640,7 @@ p{
 
 	p{
 		/*padding: 20px;*/
-		font-size: 6vw;
+		font-size: 5vw;
 		text-align: center;
 	}
 
@@ -641,6 +651,7 @@ p{
 /*Services page*/
 
 .services-holder{
+	padding-top: 5%;
 	display: flex;
 	width: 80%;
 	justify-content: center;
@@ -657,7 +668,7 @@ p{
 	margin-right: auto;
 }
 .service-image-holder{
-	width: 100%;
+	width: 150%;
 }
 
 .service-image-holder img{
@@ -672,4 +683,22 @@ p{
 
 .service-content-holder:hover{
 	color:var(--blue);
+}
+
+@media (max-width: 640px){
+	.services-holder{
+		width: 100%;
+		padding-right: 0%;
+	}
+	.service-name-holder{
+
+		font-size: 3vw;
+		text-align: center;
+	}
+
+	.service-image-holder img{
+		width: 100%;
+
+	}
+
 }
