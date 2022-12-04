@@ -8,49 +8,48 @@
 </head>
 <body>
 
-
 	<div class = "main-page-container">
 		<div class = "nav-bar">
+			<div class = "menu-button">
+				<img class = "menu-button-img" src="img/menu-button.png" onclick="menu_display(0)">
+			</div>
 			<ul class = "nav-list">
-				<li class = "list-item"><a href="#"><span class = "underline">Home</span></a></li>
-				<li class = "list-item"><a href="#"><span class = "underline">About</span></a></li>
-				<div class = "list-item drop-down-container"><a href="#"><span class = "underline">Services</span></a>
+				<li class = "list-item"><a href="#"><span class = "underline" onclick = "menu_display(1)">Home</span></a></li>
+				<li class = "list-item"><a href="#page-2"><span class = "underline" onclick = "menu_display(1)">About</span></a></li>
+				<div class = "list-item drop-down-container"><a href="#page-3"><span class = "underline" onclick = "menu_display(1)">Services</span></a>
 				<ul class = "drop-down" >
-					<li><a href="#"><span class = "underline">Web Development</span></a></li>	
-					<li><a href="#"><span class = "underline">UI/UX Design</span></a></li>	
-					<li><a href="#"><span class = "underline">Illustrations</span></a></li>	
+					<li><a href="#page-4"><span class = "underline">Web Development</span></a></li>	
+					<li><a href="#page-5"><span class = "underline">UI/UX Design</span></a></li>	
+					<li><a href="#page-6"><span class = "underline">Illustrations</span></a></li>	
 				</ul>
 				</div>
-				<li class = "list-item"><a href="#"><span class = "underline">Portfolio</span></a></li>				
-				<li class = "list-item"><a href="#"><span class = "underline">Contact</span></a></li>				
+				<li class = "list-item"><a href="#page-7" ><span class = "underline" onclick = "menu_display(1)">Portfolio</span></a></li>				
+				<li class = "list-item"><a href="#page-8"><span class = "underline" onclick = "menu_display(1)">Contact</span></a></li>				
 			</ul>
 		</div>
 		<div class = "central-gif">
 			<img src="img/guy-15sec.gif" onload = "sync()">
 		</div>
 		<div class = "surround-services-container " id = "service-1">
-			<a href = "#"><div class = "flicker" id= "flicker-1">			
+			<a href = "#page-4"><div class = "flicker" id= "flicker-1">			
 			<img class = "surround-services" src = "img/service-1.png" >
-			<span>Web Developer</span>
+			<span>Web Development</span>
 			</div>
 			</a>
 		</div>
 		<div class = "surround-services-container " id = "service-2">
-			<a href="#"><div class = "flicker" id = "flicker-2">
+			<a href="#page-5"><div class = "flicker" id = "flicker-2">
 			<img class = "surround-services" src = "img/service-2.png" >
-			UI/UX Designer
+			UI/UX Design
 			</div>
 			</a>
 		</div>		
 		<div class = "surround-services-container " id = "service-3">
-			<a href="#"><div class = "flicker" id = "flicker-3">
+			<a href="#page-6"><div class = "flicker" id = "flicker-3">
 			<img class = "surround-services" src = "img/service-2.png" >
-			Illustrator
+			Illustrations
 			</div>
 			</a>
-		</div>
-		<div class = "design">
-			
 		</div>
 		<div class = "main-content-container">
 			<div>THIS GUY DOES</div>
@@ -58,13 +57,146 @@
 				<!-- Web development -->
 			</div>
 		</div>
-
+		<a href="#page-2">
 		<div class ="scroll-gif">
 			<img src="img/hand-gif.gif">
+		</div>
+		</a>
+	</div>
+	<div class = "other-page-container left" id = "page-2">
+		<div class = "design">
+			<img src="img/blue-design.png">
+		</div>
+		<div class = "content">
+			<h1 class = "blue">ABOUT</h1>
+			<p class = "yellow">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat.</p>
+		</div>
+		<a href="#page-3">
+		<div class ="scroll-gif">
+			<img src="img/hand-gif.gif">
+		</div>
+		</a>
+
+	</div>
+	<div class = "other-page-container right" id = "page-3">
+		<div class = "design">
+			<img src="img/yellow-design.png">
+		</div>
+		<div class = "content">
+			<h1 class = "blue">SERVICES</h1>
+			<p class = "yellow">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat.</p>
+		</div>
+		<a href="#page-4">
+		<div class ="scroll-gif">
+			<img src="img/hand-gif.gif">
+		</div>
+		</a>
+
+	</div>
+	<div class = "other-page-container left" id = "page-4">
+		<div class = "design">
+			<img src="img/blue-design.png">
+		</div>
+		<div class = "content">
+			<h1 class = "blue">WEB DESIGN</h1>
+			<p class = "yellow">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat.</p>
+		</div>
+		<a href="#page-5">
+		<div class ="scroll-gif">
+			<img src="img/hand-gif.gif">
+		</div>
+		</a>
+	</div>
+	<div class = "other-page-container right" id = "page-5">
+		<div class = "design">
+			<img src="img/yellow-design.png">
+		</div>
+		<div class = "content">
+			<h1 class = "blue">UI/UX DESIGN</h1>
+			<p class = "yellow">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat.</p>
+		</div>
+		<a href="#page-6">
+		<div class ="scroll-gif">
+			<img src="img/hand-gif.gif">
+		</div>
+		</a>
+	</div>
+	<div class = "other-page-container left" id = "page-6">
+		<div class = "design">
+			<img src="img/blue-design.png">
+		</div>
+		<div class = "content">
+			<h1 class = "blue">ILLUSTRATIONS</h1>
+			<p class = "yellow">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat.</p>
+		</div>
+		<a href="#page-7">
+		<div class ="scroll-gif">
+			<img src="img/hand-gif.gif">
+		</div>
+		</a>
+	</div>
+	<div class = "other-page-container right" id = "page-7">
+		<div class = "design">
+			<img src="img/yellow-design.png">
+		</div>
+		<div class = "content">
+			<h1 class = "blue">PORTFOLIO</h1>
+			<p class = "yellow">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat.</p>
+		</div>
+		<a href="#page-8">
+		<div class ="scroll-gif">
+			<img src="img/hand-gif.gif">
+		</div>
+		</a>
+	</div>
+	<div class = "other-page-container left" id = "page-8">
+		<div class = "design">
+			<img src="img/blue-design.png">
+		</div>
+		<div class = "content">
+			<h1 class = "blue">CONTACT</h1>
+			<p class = "yellow">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat.</p>
 		</div>
 	</div>
 </body>
 <script type="text/javascript">
+	menu_bar = document.querySelector(".nav-bar");
+	menu_list = document.querySelector(".nav-list");
+	menu_button = document.querySelector(".menu-button-img");
+	var isMenuDisplayed = 0;
+	var x = window.matchMedia("(max-width: 767px)");
+	window.onscroll = function scroll_animations(){
+		// scrollTop = window.scrollTop();
+		if(x.matches){
+			if(isMenuDisplayed == 1){
+				if(window.scrollY > 100){
+					menu_display(1);
+				}
+			}
+		}
+	};
+
 	// flick = document.querySelectorAll(".flicker");
 	function sync(){
 		console.log("loaded");
@@ -72,8 +204,28 @@
 		document.getElementById("flicker-1").style.animation = "flicker1 15s infinite";
 		document.getElementById("flicker-2").style.animation = "flicker2 15s infinite";
 		document.getElementById("flicker-3").style.animation = "flicker3 15s infinite";
-		document.querySelector("#typed-out").style.setProperty('--anime',"typed-out 15s infinite,blinky 0.3s infinite");
+		document.querySelector("#typed-out").style.setProperty('--anime',"typed-out linear 15s infinite,blinky 0.3s infinite");
 	}
+
+	function menu_display(clicks){
+		if(x.matches){
+			if(isMenuDisplayed == 0 && clicks == 0){
+				menu_bar.style.height = "80%";
+				menu_list.style.height = "60%";
+				isMenuDisplayed = 1;
+				menu_button.src = "img/menu-close.png";
+			}
+			else{
+				menu_bar.style.height = "20%";
+				menu_list.style.height = "0%";
+				isMenuDisplayed = 0;
+				menu_button.src = "img/menu-button.png";
+
+			}
+		}
+	}
+
+
 </script>
 <!-- <script type="text/javascript"></script> -->
 </html>
